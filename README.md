@@ -1,2 +1,2 @@
 # Navigation-menu
-An animation for navigations
+An animation for navigations :)

@@ -10,7 +10,7 @@ nav{
     height: 70px;
     align-items: center;
     justify-content: space-between;
-}
+   }
 
 #logo {
     margin-left: 5%;
@@ -46,9 +46,9 @@ nav ul li a:hover{
     position: absolute;
     background-color: black;
     width: 100%;
-    height: 100%;
-    -webkit-clip-path: circle(0% at 100% 0);
-    clip-path: circle(0% at 100% 0); 
+    height: 200px;
+     top: 70px;
+    clip-path: inset(0 0 100% 0);
 transition: .5s all ease-in-out;
 display: flex;
 justify-content: center;
@@ -63,6 +63,8 @@ align-items: center;
 flex-direction: column;
 animation-duration: 1s;
 animation-fill-mode: forwards;
+width: 100%;
+height: 100%;
 }
 
  #hamMenu.fadeIn{
@@ -76,11 +78,30 @@ animation-name: fadeInUp;
      }
 
 #hamMenu a{
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
     color: white;
-    font-size: 35px;
     text-decoration: none;
-    padding: 20px;
 }
+
+header{
+  background-image: url("https://cdn.pixabay.com/photo/2014/09/14/18/04/dandelion-445228_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+section{
+  background-color: rgb(255, 160, 160);
+  height: 100vh;
+}
+
+
 /*
 .wrapper { 
   height: 10px;
@@ -144,8 +165,7 @@ background-size: 1800% 1800%;
   }
 
 #overlay.open{
-    -webkit-clip-path: circle(141.3% at 100% 0);
-    clip-path: circle(141.3% at 100% 0); 
+  clip-path: inset(0 0 0 0);
 }
 
 @media screen and (max-width: 900px){

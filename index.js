@@ -9,7 +9,6 @@ function open() {
   if (toggle == 0) {
     hamburger.classList.add("is-active");
     hamburger.style.backgroundColor = "white";
-    logo.style.color = "white";
     overlay.classList.add("open");
     hamMenu.classList.add("fadeIn");
     hamMenu.classList.remove("fadeOut");
@@ -17,7 +16,6 @@ function open() {
   } else if (toggle == 1) {
     hamburger.classList.remove("is-active");
     overlay.classList.remove("open");
-    logo.style.color = "black";
     hamMenu.classList.remove("fadeIn");
     hamMenu.classList.add("fadeOut");
     toggle -= 1;
